@@ -4,8 +4,6 @@ const AWS = require("aws-sdk");
 const dotenv = require('dotenv');
 dotenv.config();
 
-console.log(process.env.AWS_ACCESS_KEY);
-console.log(process.env.AWS_SECRET_ACCESS_KEY);
 const s3 = new AWS.S3({
   accessKeyId: 'AKIAQK37GNI7H4U6TBEB',
   secretAccessKey: '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'
@@ -16,11 +14,23 @@ const SYMBOLS = [
   "^MXX",
   "^NYA",
   "^IXIC",
-  "EWW",
   "SPY",
+  "DJI",
   "BTC-USD",
+  "ALFAA.MX",
+  "ALSEA.MX",
+  "LALAB.MX",
+  "LIVEPOLC-1.MX",
+  "ORBIA.MX",
+  "NEMAKA.MX",
+  "PE&OLES.MX",
+  "TLEVISACPO.MX",
+  "VOLARA.MX",
+  "AUTLANB.MX",
+  "USO",
+  "UBER",
+  "BABAN.MX",
   "XRP-USD",
-  "ETH-USD"
 ];
 
 exports.handler = (event) => {
