@@ -5,8 +5,8 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const s3 = new AWS.S3({
-  accessKeyId: 'AKIAQK37GNI7H4U6TBEB',
-  secretAccessKey: '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'
+  accessKeyId: process.env.AWS_ACCESS_KEY,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 });
 
 const SYMBOLS = [
@@ -15,7 +15,7 @@ const SYMBOLS = [
   "^NYA",
   "^IXIC",
   "SPY",
-  "DJI",
+  "^DJI",
   "BTC-USD",
   "ALFAA.MX",
   "ALSEA.MX",
